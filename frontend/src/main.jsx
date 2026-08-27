@@ -3,7 +3,7 @@ import {createRoot} from 'react-dom/client';
 import {Activity, ArrowRight, BarChart3, Bell, Bot, Check, CheckCircle2, ChevronRight, ClipboardCheck, Clock3, FileCheck2, FileText, GraduationCap, Home, LayoutDashboard, Menu, MessageCircle, Moon, Plus, RefreshCw, Search, Send, Settings, ShieldAlert, Sparkles, Sun, Upload, UserPlus, Users, WalletCards, X, Zap} from 'lucide-react';
 import './styles.css';
 
-const API='http://127.0.0.1:8000/api';
+const API=import.meta.env.VITE_API_URL+'/api';
 async function api(path, opts={}){
   const r=await fetch(API+path,{...opts,headers:{'Content-Type':'application/json',...(opts.headers||{})}});
   if(!r.ok){const e=await r.json().catch(()=>({detail:'Request failed'}));throw new Error(e.detail||'Request failed')}

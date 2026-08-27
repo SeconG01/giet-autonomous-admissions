@@ -1,24 +1,4 @@
-# GIET Autonomous Admissions Agent
 
-A simplified, functional FastAPI + React/Vite demo for the GIET University autonomous admissions challenge.
-
-## Gemini API: one-line setup
-
-Open:
-
-`backend/app/config.py`
-
-Replace:
-
-```python
-GEMINI_API_KEY = "PASTE_YOUR_GEMINI_API_KEY_HERE"
-```
-
-with your real Gemini API key. The backend is where the key belongs. Do **not** paste it into `frontend/src/main.jsx`.
-
-The current model is:
-
-`gemini-3.1-pro-preview`
 
 ## Run backend
 
